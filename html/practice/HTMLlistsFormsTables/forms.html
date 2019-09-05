@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms in HTML</title>
+    </head>
+    <body>
+        <h1>Form Example</h1>
+        <form action="fakePage.html" method="POST">
+          Text Input: <input type="text" name="myTextInput" required/><br />
+          Radio Buttons:<br />
+          <input type="radio" name="answer" value="YES" checked />Yes<br />
+          <input type="radio" name="answer" value="NO" />No<br />
+          <input type="radio" name="answer" value="MAYBE" />Maybe<br />
+          Password Input: <input type="password" name="userPassword" /><br />
+          <input type="checkbox" name="myChoices" value="Soup" />Soup<br />
+          <input type="checkbox" name="myChoices" value="Salad" />Salad<br />
+          <input type="checkbox" name="myChoices" value="Fries" />Fries<br />
+          <input type="checkbox" name="myChoices" value="Dessert" checked/>Dessert<br />
+          <select name="phones">
+              <option value="iPhone6">Mac OS</option>
+              <option value="GalaxyS6">Windows</option>
+              <option value="Nexus5">Linux</option>
+          </select><br />
+          <textarea name="briefDescription"></textarea><br />
+          <input type="submit" value="Pay"/><input type="reset" value="Reload Form" /<br />
+        </form>
+    </body>
+</html>
