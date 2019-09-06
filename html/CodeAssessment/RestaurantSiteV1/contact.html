@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+      <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body style="font-family: 'Comic Sans MS', cursive, sans-serif;">
+    <main>
+      <header>
+        <h1 style="text-align:center;">The Happy Dragon Bar and Grill</h1>
+      <header>
+
+        <nav>
+          <hr />
+          <div style="padding: 0.4em 0; font-size: 1em;">
+            &nbsp;&nbsp;
+            <span><a href="index.html">Home</a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="menuPage.html">Menu</a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><a href="contact.html">Contact Us</a></span>
+          </div>
+          <hr />
+        </nav>
+        <article class="form-container" style="font-size: 1.4em;">
+          <form id="contact-form" action="submit.html" method="POST">
+            <label for="#name">Name: </label>
+            <input id="name" type="text" />
+            <label for="#email">Email: </label>
+            <input id="email" type="text" />
+            <label for="#phone">Phone: </label>
+            <input id="phone" type="text" />
+            <label for="#reason-for-inquiry">Reason For Inquiry: </label>
+            <select id="reason-for-inquiry">
+              <option value="catering" selected>Catering</option>
+              <option value="private-party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="#additional-info">Additional Information :</label>
+            <textarea id="additional-info" name="info" rows="4">
+            </textarea>
+
+            <label for="#have-you-been">Have you been to this restaurant? </label>
+            <div id="have-you-been">
+              <input type="radio" id="choice2" name="questionnaire" value="no" checked>
+              <label for="choice2">No</label>
+              <input type="radio" id="choice1" name="questionnaire" value="yes">
+              <label for="choice1">Yes</label><br />
+            </div>
+
+            <label for="best-days-to-contact">Best days to contact you: </label>
+            <div id="best-days-to-contact">
+              <input type="checkbox" id="monday" name="day" value="monday">
+              <label for="monday">M</label>
+              <input type="checkbox" id="tuesday" name="day" value="tuesday">
+              <label for="tuesday">T</label>
+              <input type="checkbox" id="wednesday" name="day" value="wednesday">
+              <label for="wednesday">W</label>
+              <input type="checkbox" id="thursday" name="day" value="thursday">
+              <label for="monday">Th</label>
+              <input type="checkbox" id="friday" name="day" value="friday">
+              <label for="friday">F</label><br />
+            </div>
+            <label for=submit-wrapper></label>
+            <div class="submit-wrapper">
+              <input id="contact-submit" type="submit" name="submit" value="Send Request">
+            </div>
+          </form>
+        </article>
+      <footer>
+        <hr />
+        <div id="footerAddress" style="text-align: center;"">
+          <p>1234 Fake Street, Springfield, VM, 12345</p>
+          <p>Phone: 123-4567</p>
+          <p>All images obtained at courtesy of <a href="https://pixabay.com/">pixabay.com</a></p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

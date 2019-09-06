@@ -1,0 +1,23 @@
+.form-container {
+  margin-left: 5%;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap:5px;
+}
+
+#contact-form label {
+  width: 360px;
+  text-align: right;
+}
+
+div.submit-wrapper {
+  text-align:center;
+  display: inline-block;
+}
+
+#contact-submit {
+  margin: 0 auto;
+}
