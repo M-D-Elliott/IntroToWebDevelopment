@@ -1,0 +1,21 @@
+.warning {
+  font-weight: bold;
+  color: red;
+}
+
+.warning {
+  font-weight: bold;
+  /* color: red; */
+}
+
+/* .warning {
+  font-weight: bold;
+  color: red;
+} */
+
+/* This is used
+for validation */
+.warning {
+  font-weight: bold;
+  color: red;
+}
