@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Name: Marcus Elliott
+    Date Created: 09/05/2019 12:38 p.m. CST
+    Most recent revision: 09/05/2019 12:38 p.m. CST
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Contact</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/form.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav class="border">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+      <div class="clear-float"></div>
+    </nav>
+
+    <h2>Information Request</h2>
+    <form action="submit.html" method="POST">
+      <label for="#first-name">First Name:</label>
+      <br />
+      <input id="first-name" type="text" />
+      <br />
+      <label for="#last-name">Last Name:</label>
+      <br />
+      <input id="last-name" type="text" />
+      <br />
+      <label for="#phone">Phone Number:</label>
+      <br />
+      <input id="phone" type="text" />
+      <br />
+      <label for="#phone">Best time to call:</label>
+      <br />
+      <select id="contactTimes" name="contactTimes">
+        <option value="default" selected>--Select One--</option>
+        <option value="morning">
+          Morning (8AM - 12PM CST)
+        </option>
+        <option value="afternoon">
+          Afternoon (12PM - 4PM CST)
+        </option>
+        <option value="night">
+          Night (4PM - 8PM CST)
+        </option>
+      </select><br /><br />
+      <fieldset>
+        <legend>I am interested in (check all that apply)</legend>
+        <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+        <label for="frontEnd">Front End Web Development</label><br />
+        <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+        <label for="backEnd">Back End Web Development</label><br />
+        <input type="checkbox" id="database" name="interest" value="database">
+        <label for="database">Database Design</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>I have filled in the client questionnaire form:</legend>
+        <input type="radio" id="choice1" name="questionnaire" value="yes">
+        <label for="choice1">Yes</label><br />
+        <input type="radio" id="choice2" name="questionnaire" value="no">
+        <label for="choice2">No</label><br />
+      </fieldset><br />
+      <label for="info">Additional Information</label>
+      <textarea id="info" name="info"></textarea><br />
+      <input type="submit" name="submit" value="Submit"><input type="reset" name="reset"/><br />
+    </form>
+    <br />
+    <footer>
+
+    </footer>
+  </body>
+</html>

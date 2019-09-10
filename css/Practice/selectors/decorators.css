@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .warning {
+    font-weight: bold;
+    color: red;
+  }
+
+  div .warning {
+    font-style: italic;
+  }
+
+  p {
+    color: red;
+    font-weight: bold;
+  }

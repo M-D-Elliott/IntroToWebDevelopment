@@ -1,0 +1,47 @@
+/*
+Creator: Marcus Elliott
+Date created: 09/09/2019 3:03 P.M. CST
+Date last modified: 09/09/2019 3:03 P.M. CST
+*/
+
+/* ----------colors (soft blue palette)---------
+#264A9C
+#4061AD
+#5F7EC6 -- primary
+#85A0DD
+#B6C7F0
+*/
+
+/* -------CSS connection test-------- */
+/* body {
+    background-color: hotpink;
+} */
+
+/* -------Main tags--------- */
+
+body {
+    background-color: #fef9ff;
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d
+}
+
+header, footer {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+nav {
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 0.75%;
+    padding: 1.25%;
+}
+
+/* ---------Article tags------ */
