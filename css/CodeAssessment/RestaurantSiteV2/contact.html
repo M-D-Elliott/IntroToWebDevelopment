@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Name: Marcus Elliott
+Date Created: 09/05/2019
+Most recent revision: 09/10/2019 2:31 a.m.. CST
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style>
+      .form-container {
+        font-size: 1.4em;
+      }
+
+      #contact-form {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap:5px;
+        justify-content: center;
+      }
+
+      #contact-form label {
+        width: 360px;
+        text-align: right;
+      }
+
+      div.submit-wrapper {
+        text-align:center;
+        display: inline-block;
+      }
+
+      #contact-submit {
+        margin: 0 auto;
+      }
+      label[required=required] {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Comic Sans MS', cursive, sans-serif;">
+    <main>
+      <header>
+        <h1 style="text-align:center;">The Happy Dragon Bar and Grill</h1>
+      </header>
+
+      <nav>
+        <span><a href="index.html">Home</a></span>
+        <span><a href="menuPage.html">Menu</a></span>
+        <span><a href="contact.html">Contact Us</a></span>
+      </nav>
+      <section>
+        <article class="form-container">
+          <form id="contact-form" action="submit.html" method="POST">
+            <label for="#name" required="required">Name: </label>
+            <input id="name" type="text" required />
+            <label for="#email" required="required">Email: </label>
+            <input id="email" type="text" required />
+            <label for="#phone" required="required">Phone: </label>
+            <input id="phone" type="text" required />
+            <label for="#reason-for-inquiry">Reason For Inquiry: </label>
+            <select id="reason-for-inquiry">
+              <option value="catering" selected>Catering</option>
+              <option value="private-party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="#additional-info">Additional Information :</label>
+            <textarea id="additional-info" name="info" rows="4">
+            </textarea>
+
+            <label for="#have-you-been">Have you been to this restaurant? </label>
+            <div id="have-you-been">
+              <input type="radio" id="choice2" name="questionnaire" value="no" checked>
+              <label for="choice2">No</label>
+              <input type="radio" id="choice1" name="questionnaire" value="yes">
+              <label for="choice1">Yes</label><br />
+            </div>
+
+            <label for="best-days-to-contact">Best days to contact you: </label>
+            <div id="best-days-to-contact">
+              <input type="checkbox" id="monday" name="day" value="monday">
+              <label for="monday">M</label>
+              <input type="checkbox" id="tuesday" name="day" value="tuesday">
+              <label for="tuesday">T</label>
+              <input type="checkbox" id="wednesday" name="day" value="wednesday">
+              <label for="wednesday">W</label>
+              <input type="checkbox" id="thursday" name="day" value="thursday">
+              <label for="monday">Th</label>
+              <input type="checkbox" id="friday" name="day" value="friday">
+              <label for="friday">F</label><br />
+            </div>
+            <label for="submit-wrapper"></label>
+            <div class="submit-wrapper">
+              <input id="contact-submit" type="submit" name="submit" value="Send Request">
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <footer>
+        <section id="footerAddress" class="center footer">
+          <p>1234 Fake Street, Springfield, VM, 12345</p>
+          <p>Phone: 123-4567</p>
+          <p>All images obtained at courtesy of <a href="https://pixabay.com/">pixabay.com</a></p>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
