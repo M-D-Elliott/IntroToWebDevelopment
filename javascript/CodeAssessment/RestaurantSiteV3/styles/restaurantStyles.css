@@ -1,0 +1,90 @@
+/* Name: Marcus Elliott
+Date Created: 09/05/2019
+Most recent revision: 09/10/2019 2:31 a.m.. CST */
+
+/* -------Background colors------- */
+/* ----------colors (soft blue palette)---------
+#264A9C
+#4061AD
+#5F7EC6 -- primary
+#85A0DD
+#B6C7F0
+*/
+
+body {
+  background-color: #B6C7F0;
+  font-family: 'Comic Sans MS', cursive, sans-serif, 'Miama';
+}
+
+body main section:not(.footer) {
+  background-color: #264A9C;
+  color: white;
+}
+
+.jumbotron {
+  background-color: #264A9C;
+  color: white;
+}
+
+/* -------Fonts------- */
+@font-face {
+  font-family: "Miama";
+  src: url("Miama.otf");
+}
+@font-face {
+  font-family: "spray";
+  src: url("ideoma_SPRAY.otf");
+}
+
+/* -------Basic Formatting------- */
+.center {
+  text-align:center;
+}
+
+section {
+  padding: 1% 0;
+}
+
+.fa {
+  width: 14.86px;
+  height: 16px;
+}
+
+/* ---------Bootstrap formatting-------- */
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+.center-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* -------Nav/Footer------- */
+
+.nav {
+  border: 0;
+}
+
+.nav a,
+footer a {
+  color: #ab7b0c;
+}
+
+.nav a:visited,
+footer a:visited {
+  color: red;
+}
+
+nav a:hover,
+footer a:hover {
+  font-weight: bold;
+}
+
+nav a:active,
+footer a:active {
+  text-decoration: none;
+}

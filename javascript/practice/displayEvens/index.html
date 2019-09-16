@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Evens</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <h1>Sample</h1>
+    <form name="evensForm"
+          onsubmit="return validateItems();"
+          onreset="resetForm();"
+          class="form-inline"
+          id="display-evens">
+            <div class="form-group">
+                <label for="num1">Starting Number</label>
+                <input type="number" class="form-control" id="num1" value="1">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="num2">Ending</label>
+                <input type="number" class="form-control" id="num2" value="3">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="step">Step</label>
+                <input type="number" class="form-control" id="step" value="1">
+            </div>
+            <br />
+            <button type="submit" id="submitButton" class="btn btn-default" form="display-evens">Display Evens</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+    <section id="results" style="display:none;">
+      <article>
+        <p>Here are the even numbers between
+          <span id="num1Result">1</span>
+           and
+          <span id="num2Result">3</span>
+            by
+          <span id="stepResult">1</span>'s.
+        </p>
+      </article>
+      <article id="evens">
+      </article>
+    </section>
+</body>
+</html>
