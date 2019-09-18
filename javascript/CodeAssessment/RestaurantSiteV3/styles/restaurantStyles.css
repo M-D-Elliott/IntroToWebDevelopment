@@ -13,7 +13,7 @@ Most recent revision: 09/10/2019 2:31 a.m.. CST */
 
 body {
   background-color: #B6C7F0;
-  font-family: 'Comic Sans MS', cursive, sans-serif, 'Miama';
+  font-family: 'Comic Sans MS', sans-serif, cursive;
 }
 
 body main section:not(.footer) {
@@ -26,14 +26,8 @@ body main section:not(.footer) {
   color: white;
 }
 
-/* -------Fonts------- */
-@font-face {
-  font-family: "Miama";
-  src: url("Miama.otf");
-}
-@font-face {
-  font-family: "spray";
-  src: url("ideoma_SPRAY.otf");
+header h1 {
+  font-family: 'Lobster', 'Quicksand', sans-serif;
 }
 
 /* -------Basic Formatting------- */
@@ -72,6 +66,7 @@ section {
 .nav a,
 footer a {
   color: #ab7b0c;
+  text-decoration: underline;
 }
 
 .nav a:visited,
@@ -79,12 +74,12 @@ footer a:visited {
   color: red;
 }
 
-nav a:hover,
+.nav a:hover,
 footer a:hover {
   font-weight: bold;
 }
 
-nav a:active,
+.nav a:active,
 footer a:active {
   text-decoration: none;
 }

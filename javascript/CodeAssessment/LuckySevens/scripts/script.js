@@ -72,6 +72,7 @@ function rollDice(size) {
 // Main game loop, references itself until game.money runs dry, then chooses gameOver on the furthest layer.
 function play(game) {
   if(game.Money > 0){
+    game.rolls++;
     var first = rollDice(6);
     var second = rollDice(6);
     if((first + second) === 7) {
@@ -79,7 +80,6 @@ function play(game) {
     } else {
       game.Money -= 1;
     }
-    game.rolls++;
     if(game.Money > game.highest) {
       game.highest = game.Money;
       game.rollsAtHighest = game.rolls;
