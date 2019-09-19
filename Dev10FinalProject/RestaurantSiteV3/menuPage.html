@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+Name: Marcus Elliott
+Date Created: 09/05/2019
+Most recent revision: 09/13/2019 2:31 a.m.. CST
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Menu</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link
+       rel="stylesheet"
+       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style>
+      section.menu-container {
+        background-color: #4061AD;
+      }
+
+      section.menu-container article {
+        display:inline-block;
+        margin: 2.5% 0;
+      }
+
+      section.menu-container article h3,
+      section.menu-container article p {
+        margin: 0;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+      table#beverage-table {
+        width: 65%;
+        margin: 1% auto;
+        color: black;
+      }
+
+      table#beverage-table
+      {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 0.75% 1.25%;
+      }
+
+      table#beverage-table tr {
+        height: 30px;
+      }
+
+      table#beverage-table td {
+        padding: 0.5% 1%;
+      }
+
+      table#beverage-table tr:nth-child(even) {
+        background-color: #5F7EC6;
+      }
+
+      table#beverage-table tr:nth-child(odd) {
+        background-color: #B6C7F0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="center">The Happy Dragon Bar and Grill</h1>
+          <p class="center">We are opening a new location on NotReal Street!</p>
+        </div>
+      </header>
+
+      <a id="start" class="anchor"></a>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#start"><i class="fa fa-home"></i><span class="d-none d-sm-inline"> Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="menuPage.html#start"><i class="fas fa-utensils"></i><span class="d-none d-sm-inline"> Menu</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html#start"><i class="fa fa-envelope"></i><span class="d-none d-sm-inline"> Contact</span></a>
+        </li>
+      </ul>
+
+      <section class="row menu-container">
+        <noscript class="col-12 col-sm-12 center-content">
+          <article>
+            <p>*This website is best viewed with JavaScript enabled.</p>
+          </article>
+        </noscript>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Burger and Fries</b></h3>
+          <p>An American Classic!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $7.95</p>
+        </article>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Chips and Salsa</b></h3>
+          <p>Dip it!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $4.95</p>
+        </article>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Eggs</b></h3>
+          <p>Just eggs?!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $0.80</p>
+        </article>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Ice cream Extravaganza!</b></h3>
+          <p>2 gallons of ice cream.<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $4.00</p>
+        </article>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Fries</b></h3>
+          <p>An American Classic!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $1.95</p>
+        </article>
+        <article class="center col-12 col-sm-6 col-lg-4">
+          <h3><b>Steak</b></h3>
+          <p>Something not served with fries!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          lobster<br />
+          $20.95</p>
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-center col-12 col-sm-10">
+          <table id="beverage-table">
+            <tr>
+              <td class="bold" colspan="2">Beverages</td>
+            </tr>
+            <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <footer>
+        <section class="center footer">
+          <p>1234 Fake Street, Springfield, VT 12345</p>
+          <p>Phone: 123-4567</p>
+          <p>All images obtained at courtesy of <a href="https://pixabay.com/" target="_blank">pixabay.com</a></p>
+        </section>
+      </footer>
+    </main>
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
